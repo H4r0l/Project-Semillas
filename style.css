@@ -55,13 +55,92 @@
     background: white;
 }
 
+  /*=========== section Gestor de tareas ============*/
+  .taskManager{
+    background-color: #AADBC7;
+  }
+  .containerCards{
+    margin-top: 1rem;
+    padding: 0 5% 5% 5%;
 
+}
+.titlecard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.lineTitle{
+    width:20%;
+    height:2px;
+    background: black;
+}
+.boxCards{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.contentCard{
+    border: 2px solid #003B23;
+   height: 160px;
+    background: white;
+}
+.date{
+    padding: 5px 0;
+    margin: 0;
+    text-align: end;
+    color: #AADBC7;
+}
+.subtitleCard{
+    padding-left: 10px;
+    background-color: #003B23;
+    color: white;
+}
+.subtitleCard h3{
+    margin: 0;
+    padding: 0;
+}
+.textParrafo{
+    font-size: 12px;
+    text-align: justify;
+    border-top:1px solid #AADBC7 ;
+    border-bottom: 1px solid #AADBC7 ;
+    padding: 0 10px;
+    margin: 5px 5px;
+}
+.btnCard{
+    display: flex;
+    justify-content: center;
+}
+.btnCard button{
+    border: 1px solid white;
+    padding: 2px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #AADBC7;
+}
+/* indicador */
+.boxInd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indi{
+    margin: 0 0.5rem 0 2rem;
+    width: 100px;
+    height: 100px;
+    background: #003B23;
+    border-radius: 100%;
+}
+/*=========== section Gestor de tareas ============*/
 /* Movil */
 
 
 /* desktop */
 
 @media only screen and (min-width: 600px) {
+    /*=========== navbar ============*/
     .nav-bar {
         padding: 1rem;
         background: #333333;
@@ -95,6 +174,8 @@
     .line {
         display: none;
     }
+    /*=========== navbar ============*/
+  
 }
 
 
