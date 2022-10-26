@@ -1,22 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
-
 .container {
     overflow-x: hidden;
 }
 
-.title{
+.title {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
 }
+
 .sub-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-.text {
-    
-}
+
+.text {}
+
 .paragraph {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-style: italic;
 }
+
+
+/* nabar */
+
+
+/* Movil */
+
+.nav-bar {
+    padding: 1rem;
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items {
+    display: none;
+    justify-content: start;
+}
+
+.logo {
+    width: 40px;
+}
+
+.border-rigth {
+    border-right: 1px solid white;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    background: white;
+}
+
+
+/* Movil */
+
+
+/* desktop */
+
+@media only screen and (min-width: 600px) {
+    .nav-bar {
+        padding: 1rem;
+        background: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .items {
+        display: flex;
+        justify-content: start;
+    }
+    .items ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .items ul li {
+        list-style: none;
+        padding-right: 1rem;
+        margin: 0 1rem 0 0;
+        color: white;
+    }
+    .logo {
+        width: 50px;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+    }
+    .border-rigth {
+        border-right: 1px solid white;
+    }
+    .line {
+        display: none;
+    }
+}
+
+
+/* nabar */
