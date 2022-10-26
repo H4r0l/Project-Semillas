@@ -8,12 +8,59 @@
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
 }
+.title-2{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color: #003B23;
+    font-size: 2vh;
+}
+.title-container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+.title-container:before{
+    content: "";
+    display: block;
+    background: #003B23;
+    height: 5px;
+    width: 13vh;
+    position: relative;
+    align-self: center;
+    margin-right: 4vh;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+.title-container::after{
+    content: "";
+    display: block;
+    background: #003B23;
+    height: 5px;
+    width: 13vh;
+    position: relative;
+    align-self: center;
+    margin-left: 3vh;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+
+.circle-1{
+    
+}
+.circle-container{
+    display: flex;
+    align-items: center;
+}
 .sub-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-}
-.text {
-    
 }
 .paragraph {
     font-family: 'Poppins', sans-serif;
