@@ -56,6 +56,7 @@
 }
 
   /*=========== section Gestor de tareas ============*/
+ 
   .taskManager{
     background-color: #AADBC7;
   }
@@ -120,26 +121,79 @@
     border-radius: 20px;
     background-color: #AADBC7;
 }
+.btnCard button:hover{
+    background-color: rgb(0,59,35); /*Red*/
+  transition: 1s ease-in-out;
+}
 /* indicador */
 .boxInd{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
+    position: relative;
 }
+.textFooterCard{
+    position: absolute;
+    bottom: 35px;
+}
+ /* animation */
+ @keyframes indicador{
+    from{transform: rotateZ(5deg);}
+
+    to{transform: rotateZ(-420deg);}
+}
+  /* animation */
 .indi{
     margin: 0 0.5rem 0 2rem;
-    width: 100px;
-    height: 100px;
-    background: #003B23;
-    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0 5px 0 5px;
+    background:linear-gradient(0deg,#009458 50%, #003823 50%);
+    transform: rotate(60deg);
+    position: relative;
+    
 }
+.indi::before{
+    content: '30%';
+    width:8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #AADBC7 content-box;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 4rem;
+    transform: rotate(-60deg);
+   
+}
+.indi::after{
+    content: '';
+    width:8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: linear-gradient(transparent 50%, #AADBC7 50%);
+    transform: scale(1.1) rotate(-60deg);
+    animation-name: indicador;
+    animation-duration: 3s;
+}
+
 /*=========== section Gestor de tareas ============*/
 /* Movil */
 
 
 /* desktop */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     /*=========== navbar ============*/
     .nav-bar {
         padding: 1rem;
@@ -175,7 +229,142 @@
         display: none;
     }
     /*=========== navbar ============*/
-  
+   /*=========== section Gestor de tareas ============*/
+   .taskManager{
+    background-color: #AADBC7;
+  }
+  .containerCards{
+    margin-top: 1rem;
+    padding: 0 5% 5% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.titlecard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.titlecard h3{
+    font-size: 28px;
+}
+.lineTitle{
+    width:32%;
+    height:2px;
+    background: black;
+}
+.boxCards{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+.contentCard{
+    border: 2px solid #003B23;
+   height: 160px;
+    background: white;
+}
+.date{
+    padding: 5px 0;
+    margin: 0;
+    text-align: end;
+    color: #AADBC7;
+}
+.subtitleCard{
+    padding-left: 10px;
+    background-color: #003B23;
+    color: white;
+}
+.subtitleCard h3{
+    margin: 0;
+    padding: 0;
+}
+.textParrafo{
+    font-size: 12px;
+    text-align: justify;
+    border-top:1px solid #AADBC7 ;
+    border-bottom: 1px solid #AADBC7 ;
+    padding: 0 10px;
+    margin: 5px 5px;
+}
+.btnCard{
+    display: flex;
+    justify-content: center;
+}
+.btnCard button{
+    border: 1px solid white;
+    padding: 2px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #AADBC7;
+}
+/* indicador */
+.boxInd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indi{
+    margin: 3rem 0 2rem 0;
+    width: 100px;
+    height: 100px;
+    background: #003B23;
+    border-radius: 100%;
+}
+/* indicador */
+.boxInd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.textFooterCard{
+    position: absolute;
+    bottom: 50px;
+}
+.indi{
+    margin: 0 0.5rem 0 2rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 2rem 0 2rem 0;
+    background:linear-gradient(0deg,#009458 50%, #003823 50%);
+    transform: rotate(60deg);
+    position: relative;
+}
+.indi::before{
+    content: '30%';
+    width:8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #AADBC7 content-box;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 4rem;
+    transform: rotate(-60deg);
+}
+.indi::after{
+    content: '';
+    width:8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: linear-gradient(transparent 50%, #AADBC7 50%);
+    transform: scale(1.1) rotate(-60deg);
+}
+/*=========== section Gestor de tareas ============*/
 }
 
 
