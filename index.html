@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Semillas</title>
 </head>
-
 <body>
     <div class="container">
         <nav>
@@ -65,29 +64,6 @@
         </section>
         <!--End-Gestor-->
         
-        <!--Seguimiento-estado-de-ánimo-->
-        <section>
-            <div>
-                <h2 class="title-2 title-container">Seguimiento de estado de ánimo mensual</h2>
-                <div class="circle-container"> <!--Contenedor Indicadores-->
-                    <div class="circle">
-                        <svg>
-                            <circle class="circle1"  cx="80" cy="78" r="70" stroke="#AADBC7"stroke-width="3px" fill="transparent"/>
-
-                        </svg>
-                    </div>
-                    <div>
-                        <svg>
-                            <circle class="circle1"  cx="80" cy="78" r="70" stroke="#AADBC7" stroke-width="3px" fill="transparent"/>
-                        </svg>
-                    </div>
-                    <div><!--Medidor "Normal"--></div>
-                    <div><!--Medidor "Mal"--></div>
-                    <div><!--Medidor "Terrible"--></div>
-                </div>
-            </div>
-        </section>
-        <!--End-Seguimiento-->
                 <div class="items">
                     <ul>
                         <li class="border-rigth ">Inicio</li>
@@ -183,7 +159,65 @@
             </div>
         </section>
         <!--********************* Gestor de tareas semanales **********************-->
-    
+        <!--Seguimiento-estado-de-ánimo-->
+        <section>
+            <div>
+                <h2 class="title-2 title-container">Seguimiento de estado de ánimo mensual</h2>
+                <div> <!--Contenedor Indicadores-->
+                        <div class="progress-container">
+                            <div class="circle circle1">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">20 <span class="lower"> %</span></h2>
+                            </div>
+                            <div class="sub-title">GENIAL</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="circle circle2">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">10 <span class="lower"> %</span></h2>
+                            </div>
+                            <div class="sub-title">BIEN</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="circle">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">60 <span class="lower"> %</span></h2>
+                            </div>
+                            <div class="sub-title">NORMAL</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="circle circle3">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">10 <span class="lower"> %</span></h2>
+                            </div>
+                            <div class="sub-title">MAL</div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="circle circle4">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">0 <span class="lower"> %</span></h2>
+                            </div>
+                            <div class="sub-title">TERRIBLE</div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!--End-Seguimiento-->
     </div>
     <!--End Container-->
 </body>
