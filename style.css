@@ -179,6 +179,272 @@
     font-weight: 300;
     font-style: italic;
 }
+
+
+
+
+
+
+
+
+.title-seccion-actividades{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.title-container-seccion-actividades{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    text-align: right;
+    padding: 4% 0 2% 0;
+}
+.title-container-seccion-actividades:before{
+    content: "";
+    display: block;
+    background: #FFFFFF;
+    height: 3px;
+    width: 500px;
+    position: relative;
+    align-self: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.seccion-actividades {
+    background: rgb(0,59,35);
+    background: radial-gradient(circle, rgba(0,59,35,0.9220063025210083) 0%, rgba(0,123,73,1) 50%, rgba(128,179,158,1) 100%);
+}
+.container-cloud{
+    margin: 0 15%;
+    padding: 5% 0;
+    align-content: center;
+}
+.viajes:hover, .alimentacion:hover, .sueño:hover, .trabajo:hover, .familia:hover, .amistades:hover, .espiritualidad:hover, .finanzas:hover, .estudio:hover, .salud:hover, .relaciones:hover, .ejercicio:hover{
+    transition: 1s fill;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+    stroke-width: 2%;
+    stroke: #003B23;
+    stroke-linecap: round;
+    stroke-dashoffset: 500;
+    stroke-dasharray: 500;
+    animation: animacionCloud 4s ease-out forwards;
+}
+@keyframes animacionCloud {
+    to {stroke-dashoffset: 0;}
+}
+.viajes, .familia, .ejercicio {
+    fill: #FFFFFF;
+}
+.trabajo, .finanzas, .alimentacion  {
+    fill: #EAF6F1;
+}
+.estudio, .relaciones {
+    fill:#D4EDE3;
+}
+.espiritualidad, .salud  {
+    fill:#BFE4D5;
+}
+.amistades, .sueño {
+    fill: #AADBC7
+}
+.st{fill:#003B23;
+}
+.container-cloud {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a a b"
+    "c d d"
+    "e e f"
+    "g h h"
+    "i i j"
+    "k l l";
+    gap: 0.5%;
+}
+.sub-container-viajes {
+    grid-area: a;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-amistades {
+    grid-area: b;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-espiritualidad {
+    grid-area: c;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-relaciones {
+    grid-area: d;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-alimentacion {
+    grid-area: e;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-trabajo {
+    grid-area: f;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-estudio {
+    grid-area: g;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-ejercicio {
+    grid-area: h;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-sueño {
+    grid-area: i;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-familia {
+    grid-area: j;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-finanzas {
+    grid-area: k;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-salud {
+    grid-area: l;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-viajes:hover, .sub-container-relaciones:hover, .sub-container-sueño:hover, .sub-container-alimentacion:hover, .sub-container-ejercicio:hover, .sub-container-salud:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+.sub-container-amistades:hover, .sub-container-espiritualidad:hover, .sub-container-estudio:hover, .sub-container-trabajo:hover, .sub-container-finanzas:hover, .sub-container-familia:hover {
+    transform: scale(2.6);
+    z-index: 1;
+}
+.svg-viajes, .svg-alimentacion, .svg-sueño, .svg-trabajo, .svg-familia, .svg-amistades, .svg-espiritualidad, .svg-finanzas, .svg-estudio, .svg-salud, .svg-relaciones, .svg-ejercicio {
+    margin: 1%;
+    justify-content: center;
+    align-content: center;
+}
+
+@media only screen and (min-device-width: 768px) {
+
+    .title-seccion-actividades {
+        font-size: 25px;
+    }
+    .title-container-seccion-actividades:before {
+        width: 50%;
+    }
+    .container-cloud {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a b c c d e e f"
+        "g h h i j j k l l";
+        gap: 0.5%;
+    }
+    .sub-container-viajes {
+        grid-area: a;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-amistades {
+        grid-area: b;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-espiritualidad {
+        grid-area: c;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-relaciones {
+        grid-area: d;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-alimentacion {
+        grid-area: e;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-trabajo {
+        grid-area: f;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-estudio {
+        grid-area: g;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-ejercicio {
+        grid-area: h;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-sueño {
+        grid-area: i;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-familia {
+        grid-area: j;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-finanzas {
+        grid-area: k;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-salud {
+        grid-area: l;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .viajes:hover, .alimentacion:hover, .sueño:hover, .trabajo:hover, .familia:hover, .amistades:hover, .espiritualidad:hover, .finanzas:hover, .estudio:hover, .salud:hover, .relaciones:hover, .ejercicio:hover{
+        transition: 1s fill;
+        transition-timing-function: ease-out;
+        cursor: pointer;
+        stroke-width: 2%;
+        stroke: #003B23;
+        stroke-linecap: round;
+        stroke-dashoffset: 500;
+        stroke-dasharray: 500;
+        animation: animacionCloud 4s ease-out forwards;
+    }
+    .sub-container-viajes:hover, .sub-container-espiritualidad:hover, .sub-container-alimentacion:hover, .sub-container-ejercicio:hover, .sub-container-familia:hover, .sub-container-salud:hover {
+        transform: scale(1.5);
+    }
+    .sub-container-amistades:hover, .sub-container-relaciones:hover, .sub-container-trabajo:hover, .sub-container-estudio:hover, .sub-container-sueño:hover, .sub-container-finanzas:hover {
+        transform: scale(3);
+
 /* nabar */
 
 /* Movil */
@@ -1280,5 +1546,6 @@
         color: #333333;
         width: 82%;
     }
+
     }
 }
