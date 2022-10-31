@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
-body {
+.container {
     overflow-x: hidden;
 }
 
@@ -7,6 +7,7 @@ body {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
 }
+
 .title-2{
     font-family: 'DM Serif Display', serif;
     font-weight: 700;
@@ -151,9 +152,18 @@ body {
     align-items: center;
     color: #003B23;
 }
+
+
+.footerInd p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
 .sub-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    color: #003B23;
 }
 .sub-title-2 {
     font-family: 'Poppins', sans-serif;
@@ -196,89 +206,180 @@ body {
     background: white;
 }
 
-  /*=========== section Gestor de tareas ============*/
-  .taskManager{
+
+/*=========== section Gestor de tareas ============*/
+
+.taskManager {
     background-color: #AADBC7;
-  }
-  .containerCards{
+}
+
+.containerCards {
     margin-top: 1rem;
     padding: 0 5% 5% 5%;
-
 }
-.titlecard{
+
+.titlecard {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     font-size: 12px;
 }
-.lineTitle{
-    width:20%;
-    height:2px;
+
+.lineTitle {
+    width: 20%;
+    height: 2px;
     background: black;
 }
-.boxCards{
+
+.boxCards {
     display: flex;
     flex-direction: row;
     padding: 10px;
 }
-.contentCard{
+
+.contentCard {
     border: 2px solid #003B23;
-   height: 160px;
+    height: 160px;
     background: white;
 }
-.date{
+
+.date {
     padding: 5px 0;
     margin: 0;
     text-align: end;
     color: #AADBC7;
 }
-.subtitleCard{
+
+.subtitleCard {
     padding-left: 10px;
     background-color: #003B23;
     color: white;
 }
-.subtitleCard h3{
+
+.subtitleCard h3 {
     margin: 0;
     padding: 0;
 }
-.textParrafo{
-    font-size: 12px;
+
+.textParrafo {
+    font-size: 10px;
     text-align: justify;
-    border-top:1px solid #AADBC7 ;
-    border-bottom: 1px solid #AADBC7 ;
+    border-top: 1px solid #AADBC7;
+    border-bottom: 1px solid #AADBC7;
     padding: 0 10px;
-    margin: 5px 5px;
+    margin: 16px 0;
 }
-.btnCard{
+
+.btnCard {
     display: flex;
     justify-content: center;
 }
-.btnCard button{
+
+.btnCard button {
     border: 1px solid white;
     padding: 2px;
     width: 90%;
     border-radius: 20px;
     background-color: #AADBC7;
 }
+
+.footerInd p .btnCard button:hover {
+    background-color: rgb(0, 59, 35);
+    transition: 1s ease-in-out;
+}
+
+.btnCard button:hover {
+    background-color: rgb(0, 59, 35);
+    transition: 0.3s ease-in-out;
+}
+
+
 /* indicador */
-.boxInd{
+
+.boxInd {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
+    position: relative;
 }
-.indi{
+
+.textFooterCard {
+    position: absolute;
+    bottom: 19px;
+}
+
+.footerInd {
+    font-size: 10px;
+}
+
+
+/* animation */
+
+@keyframes indicador {
+    from {
+        transform: rotateZ(5deg);
+    }
+    to {
+        transform: rotateZ(-420deg);
+    }
+}
+
+
+/* animation */
+
+.indi {
     margin: 0 0.5rem 0 2rem;
-    width: 100px;
-    height: 100px;
-    background: #003B23;
-    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0 5px 0 5px;
+    background: linear-gradient(0deg, #009458 50%, #003823 50%);
+    transform: rotate(60deg);
+    position: relative;
 }
+
+.indi::before {
+    content: '30%';
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #AADBC7 content-box;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 4rem;
+    transform: rotate(-60deg);
+}
+
+.indi::after {
+    content: '';
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: linear-gradient(transparent 50%, #AADBC7 50%);
+    transform: scale(1.1) rotate(-60deg);
+    animation-name: indicador;
+    animation-duration: 3s;
+}
+
+
 /*=========== section Gestor de tareas ============*/
+
+
 /* Movil */
 
 
-/* desktop */
+/********************************* desktop *****************************************/
 
 @media only screen and (min-width: 700px) {
     /*=========== navbar ============*/
@@ -298,10 +399,18 @@ body {
         flex-direction: row;
     }
     .items ul li {
+        width: 100px;
+        display: flex;
+        justify-content: center;
         list-style: none;
         padding-right: 1rem;
         margin: 0 1rem 0 0;
         color: white;
+    }
+    .items ul li:hover {
+        background-color: rgb(247, 247, 247);
+        transition: 0.3s ease-in-out;
+        color: #333333;
     }
     .logo {
         width: 50px;
@@ -316,8 +425,149 @@ body {
         display: none;
     }
     /*=========== navbar ============*/
+    /*=========== section Gestor de tareas ============*/
+    .taskManager {
+        background-color: #AADBC7;
+    }
+    .containerCards {
+        margin-top: 1rem;
+        padding: 0 5% 5% 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .titlecard {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .titlecard h3 {
+        font-size: 28px;
+    }
+    .lineTitle {
+        width: 32%;
+        height: 2px;
+        background: black;
+    }
+    .boxCards {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+    }
+    .contentCard {
+        border: 4px solid #003B23;
+        height: 200px;
+        background: white;
+    }
+    .date {
+        font-size: 18px;
+        padding: 5px 0;
+        margin: 0;
+        text-align: end;
+        color: #AADBC7;
+    }
+    .subtitleCard {
+        padding-left: 10px;
+        background-color: #003B23;
+        color: white;
+        font-size: 22px;
+    }
+    .subtitleCard h3 {
+        margin: 0;
+        padding: 0;
+    }
+    .textParrafo {
+        font-size: 16px;
+        text-align: justify;
+        border-top: 1px solid #AADBC7;
+        border-bottom: 1px solid #AADBC7;
+        padding: 0 10px;
+        height: 126px;
+        margin: 2px 0;
+    }
+    .btnCard {
+        display: flex;
+        justify-content: center;
+    }
+    .btnCard button {
+        border: 1px solid white;
+        padding: 2px;
+        width: 90%;
+        border-radius: 20px;
+        background-color: #AADBC7;
+    }
+    /* indicador */
+    .boxInd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .indi {
+        margin: 3rem 0 2rem 0;
+        width: 100px;
+        height: 100px;
+        background: #003B23;
+        border-radius: 100%;
+    }
+    /* indicador */
+    .boxInd {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .textFooterCard {
+        position: absolute;
+        bottom: 50px;
+    }
+    .indi {
+        margin: 0 0.5rem 0 2rem;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin: 2rem 0 2rem 0;
+        background: linear-gradient(0deg, #009458 50%, #003823 50%);
+        transform: rotate(60deg);
+        position: relative;
+    }
+    .indi::before {
+        content: '30%';
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #AADBC7 content-box;
+        border-radius: 50%;
+        box-sizing: border-box;
+        padding: 1rem;
+        font-size: 2rem;
+        color: #ffffff;
+        text-align: center;
+        line-height: 4rem;
+        transform: rotate(-60deg);
+    }
+    .indi::after {
+        content: '';
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background: linear-gradient(transparent 50%, #AADBC7 50%);
+        transform: scale(1.1) rotate(-60deg);
+    }
+    .footerInd {
+        font-size: 18px;
+    }
+    /*=========== section Gestor de tareas ============*/
 
-  
 }
 @media only screen and (min-device-width: 1366px)  {
 
