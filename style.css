@@ -19,7 +19,6 @@
     color: #003B23;
 }
 
-.text {}
 
 .paragraph {
     font-family: 'Poppins', sans-serif;
@@ -230,6 +229,382 @@
 
 /*=========== section Gestor de tareas ============*/
 
+/*=========== Emociones mas expresadas por estado de animo============*/
+/*Diagrama de barras */
+.emocion{
+    margin-top: 275%;
+    color: #003823;
+    position:static;
+    font-size: 110%;
+    margin-right: 10%;
+    margin-left: -18%;
+
+}
+.linea{
+    width: 68%;
+    border: 1px solid #003823;
+    margin-left: 31%;
+    margin-top: -9%;
+    position: absolute;
+}
+.graphic{
+    width: 80%;
+    min-width: 100px;
+    position: absolute;
+    transform:translate(-50%, -50%);
+    left: 55%;
+    top: 200%;
+    display: flex;  
+    justify-content:space-between;
+}
+.bars{
+    width: 100%;
+    padding: 15px 15px 25px;
+    border: 1px violet;   
+}
+.progress{
+    line-height: 30px;
+    position: relative;
+    margin: 8px 0px 0px 0px;
+}
+.barsCon{
+    width: 120%;
+    left: -15%;
+    margin-top: -2%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 0px;
+    position: absolute;
+}
+.form{
+    border: solid transparent;
+    border-radius: 0px 20px 20px 0px;
+    left: 20%;
+    
+}
+.form div{
+    position: relative;
+    width: 0;
+    height: 12px;
+    background-color: #333333;
+    display: block;  
+    flex-direction: column;
+    justify-content:space-between;
+}
+.color-text{
+    color: #009458;
+    font-size: 12px;
+}
+
+
+.smaile{
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #000;
+    border-radius: 50%;
+}
+.good{
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #000;
+    border-radius: 50%;
+}
+.normal{
+    width: 5px;
+    height: 2px;
+    padding-top: 3px;
+    border-bottom: 1px solid #000;
+}
+.wrong{
+    width: 6px;
+    height: 8px;
+    border-top: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.terrible{
+    width: 7px;
+    height: 6px;
+    border-top: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+/*Animacion*/
+
+/*primera barrita*/
+#form-coll{
+    animation: Genial-barra 2s forwards;
+    background-color: #ccc;
+}
+@keyframes Genial-barra{
+    100%{
+        width: 50%;
+        border-radius: 0px 20px 20px 0px;
+        
+    }
+}
+#cari{
+    animation: carita-one 2s forwards;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    left: 6%;
+    border-radius: 50%;
+    margin-top: 2%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+}
+@keyframes carita-one{
+    100%{
+        background-color: #ccc;
+        left: 55%;
+    }
+}
+#caricool{
+    animation: emocionado 2s forwards;
+    margin-right: 0%;
+    background-color: transparent;
+    width: 90%;
+    font-size: 70%;
+}
+@keyframes emocionado{
+    100%{
+    color: #333333;
+    width: 39%;
+}
+}
+/*Segunda barrita*/
+#form-good{
+    animation: Bien-barra 4s forwards;
+    background-color: #999;
+}
+@keyframes Bien-barra{
+    100%{
+        width: 70%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+#carigood{
+    animation: carita-two 4s forwards;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    left: 6%;
+    border-radius: 50%;
+    margin-top: 2%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+}
+@keyframes carita-two{
+    100%{
+        background-color: #999;
+        left: 71%;
+    }
+}
+#Feliz{
+    animation: feliz 4s forwards;
+    background-color: transparent;
+    width: 90%;
+    font-size: 70%;
+}
+@keyframes feliz{
+    100%{
+    color: #333333;
+    width: 23%;
+}
+}
+/*tercer barrita*/
+#form-normal{
+    animation: Normal-barra 6s forwards;
+    background-color: #666;
+}
+@keyframes Normal-barra{
+    100%{
+        width: 30%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+#carinormal{
+    animation: carita-three 6s forwards;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    left: 6%;
+    border-radius: 50%;
+    margin-top: 2%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+}
+@keyframes carita-three{
+    100%{
+        background-color: #666;
+        left: 39%;
+    }
+}
+#Calmado{
+    animation: calmado 6s forwards;
+    background-color: transparent;
+    width: 88%;
+    font-size: 70%;
+}
+@keyframes calmado{
+    100%{
+    color: #333333;
+    width: 55%;
+    
+}
+}
+/*tercer barrita*/
+#form-normal{
+    animation: Normal-barra 6s forwards;
+    background-color: #666;
+}
+@keyframes Normal-barra{
+    100%{
+        width: 30%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+#carinormal{
+    animation: carita-three 6s forwards;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    left: 6%;
+    border-radius: 50%;
+    margin-top: 2%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+}
+@keyframes carita-three{
+    100%{
+        background-color: #666;
+        left: 39%;
+    }
+}
+#Calmado{
+    animation: calmado 6s forwards;
+    background-color: transparent;
+    width: 88%;
+    font-size: 70%;
+}
+@keyframes calmado{
+    100%{
+    color: #333333;
+    width: 55%;
+    
+}
+}
+/*cuarta barrita*/
+#form-wrong{
+    animation: Mal-barra 8s forwards;
+}
+@keyframes Mal-barra{
+    100%{
+        width: 40%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+#cariwrong{
+    animation: carita-four 8s forwards;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    left: 6%;
+    border-radius: 50%;
+    margin-top: 2%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+}
+@keyframes carita-four{
+    100%{
+        background-color: #333;
+        left: 47%;
+    }
+}
+#Ansioso{
+    animation: ansioso 8s forwards;
+    background-color: transparent;
+    width: 88%;
+    font-size: 70%;
+}
+@keyframes ansioso{
+    100%{
+    color: #333333;
+    width: 47%;
+}
+}
+/*quinta barrita*/
+#form-terrible{
+    animation: Terrible-barra 10s forwards;
+    background-color: #000;
+}
+@keyframes Terrible-barra{
+    100%{
+        width: 09%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+#caricool{
+    background-color: transparent;
+}
+#cariterri{
+    animation: carita-five 8s forwards;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    left: 6%;
+    border-radius: 50%;
+    margin-top: 2%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+}
+@keyframes carita-five{
+    100%{
+        background-color: #000;
+        left: 21%;
+    }
+}
+#NA{
+    animation: NA 8s forwards;
+    background-color: transparent;
+    width: 93%;
+    font-size: 70%;
+}
+@keyframes NA{
+    100%{
+    color: #333333;
+    width: 73%;
+}
+}
+
+
+
 
 /* Movil */
 
@@ -422,7 +797,300 @@
         font-size: 18px;
     }
     /*=========== section Gestor de tareas ============*/
-}
-
 
 /* nabar */
+
+/*=========== section Gestor de tareas ============*/
+/*Diagrama de barras */
+    .emocion{
+    font-size: 130%;
+    margin-right: 20%;
+    margin-left: -30%;
+    }
+    .linea{
+        width: 78%;
+        margin-left: 33%;
+        margin-top: -3.7%;
+        display: flex;  
+        justify-content:space-between;
+    }
+    .graphic{
+        width: 70%;
+        min-width: 590px;
+        left: 55%;
+        top: 200%;
+    }
+    .bars{
+        width: 100%;
+        padding: 30px 30px 50px;
+        border: 1px violet;   
+    }
+    .progress{
+        line-height: 40px;
+        position: relative;
+        margin: 10px 0px;
+    }
+    .barsCon{
+        width: 120%;
+        left: -8%;
+        margin-bottom: 5px;
+
+    }
+    .form{
+        border: solid transparent;
+        border-radius: 0px 20px 30px 0px;
+    }
+    .form div{
+        height: 20px;
+        
+    }
+    .color-text{
+        font-size: 100%;
+        margin-top: 1%;
+    }
+    .smaile{
+        width: 15px;
+        height: 15px;
+    }
+    .good{
+        width: 10px;
+        height: 10px;
+    }
+    .normal{
+        width: 8px;
+        height: 2px;
+    }
+    .wrong{
+        width: 8px;
+        height: 10px;
+    }
+    .terrible{
+        width: 9px;
+        height: 8px;
+    }
+    /*Animacion*/
+    /*primera barrita*/
+    #form-coll{
+        animation: Genial-barra 2s forwards;
+        background-color: #ccc;
+    }
+    @keyframes Genial-barra{
+        100%{
+            width: 50%;
+            border-radius: 0px 20px 20px 0px;
+            
+        }
+    }
+    #cari{
+        animation: carita-one 2s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-one{
+        100%{
+            background-color: #ccc;
+            left: 49%;
+        }
+    }
+    #caricool{
+        animation: emocionado 2s forwards;
+        margin-right: 32%;
+        background-color: transparent;
+        width: 56%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes emocionado{
+        100%{
+        color: #333333;
+        width: 15%;
+    }
+    }
+    /*Segunda barrita*/
+    #form-good{
+        animation: Bien-barra 4s forwards;
+        background-color: #999;
+    }
+    @keyframes Bien-barra{
+        100%{
+            width: 70%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #carigood{
+        animation: carita-two 4s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-two{
+        100%{
+            background-color: #999;
+            left: 66%;
+        }
+    }
+    #Feliz{
+        animation: feliz 4s forwards;
+        background-color: transparent;
+        width: 100%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes feliz{
+        100%{
+        color: #333333;
+        width: 31%;
+    }
+    }
+    /*tercer barrita*/
+    #form-normal{
+        animation: Normal-barra 6s forwards;
+        background-color: #666;
+    }
+    @keyframes Normal-barra{
+        100%{
+            width: 30%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #carinormal{
+        animation: carita-three 6s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-three{
+        100%{
+            background-color: #666;
+            left: 33%;
+        }
+    }
+    #Calmado{
+        animation: calmado 6s forwards;
+        background-color: transparent;
+        width: 93%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes calmado{
+        100%{
+        color: #333333;
+        width: 64%;
+    }
+    }
+    /*cuarta barrita*/
+    #form-wrong{
+        animation: Mal-barra 8s forwards;
+    }
+    @keyframes Mal-barra{
+        100%{
+            width: 40%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #cariwrong{
+        animation: carita-four 8s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-four{
+        100%{
+            background-color: #333;
+            left: 41%;
+        }
+    }
+    #Ansioso{
+        animation: ansioso 8s forwards;
+        background-color: transparent;
+        width: 93%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes ansioso{
+        100%{
+        color: #333333;
+        width: 56%;
+    }
+    }
+    /*quinta barrita*/
+    #form-terrible{
+        animation: Terrible-barra 10s forwards;
+        background-color: #000;
+    }
+    @keyframes Terrible-barra{
+        100%{
+            width: 09%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #caricool{
+        background-color: transparent;
+    }
+    #cariterri{
+        animation: carita-five 8s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-five{
+        100%{
+            background-color: #000;
+            left: 15%;
+        }
+    }
+    #NA{
+        animation: NA 8s forwards;
+        background-color: transparent;
+        width: 93%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes NA{
+        100%{
+        color: #333333;
+        width: 82%;
+    }
+    }
+}
