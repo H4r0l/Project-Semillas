@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="img/logoSWhite_1.svg" rel="icon" type="image/x-icon">
     <title>Semillas</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <nav>
             <div class="nav-bar">
-                <ul>
-                    <li>Inicio</li>
-                    <li>Estudiantes</li>
-                    <li>Estadisticas</li>
-                </ul>
+                <div class="items">
+                    <ul>
+                        <li class="border-rigth ">Inicio</li>
+                        <li class="border-rigth ">Estudiantes</li>
+                        <li>Estadisticas</li>
+                    </ul>
+                </div>
+                <!-- logo -->
+                <div id="nav-logo">
+                    <img class="logo" src="img/logoSWhite_1.svg" alt="Semilla">
+                </div>
+                <div class="menu-hamburguesa">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
-            <div id="logo">
-                <img src="img/logoSWhite_1.svg" alt="">
-            </div>
-        </header>
+        </nav>
 
         <!--Banner-->
         <section>
@@ -55,49 +65,114 @@
         </section>
         <!--End-Gestor-->
         
-        <!--Seguimiento-estado-de-ánimo-->
-        <section>
-            <div>
-                <h2></h2>
-                <div> <!--Contenedor Indicadores-->
-                    <div><!--Medidor "Genial"--></div>
-                    <div><!--Medidor "Bien"--></div>
-                    <div><!--Medidor "Normal"--></div>
-                    <div><!--Medidor "Mal"--></div>
-                    <div><!--Medidor "Terrible"--></div>
+                <div class="items">
+                    <ul>
+                        <li class="border-rigth ">Inicio</li>
+                        <li class="border-rigth ">Estudiantes</li>
+                        <li>Estadisticas</li>
+                    </ul>
+                </div>
+                <!-- logo -->
+                <div id="nav-logo">
+                    <img class="logo" src="img/logoSWhite_1.svg" alt="Semilla">
+                </div>
+                <div class="menu-hamburguesa">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
             </div>
-        </section>
-        <!--End-Seguimiento-->
+        </nav>
 
-        <!--Grafica-Emociones-->
-        <section>
-            <div><!--Contenedor Grafica-->
-                <div><!--Contenedor Barra-->
-                    <div><!--Barra--></div>
-                    <div><!--Forma y mensaje--></div>
+
+        <!--********************* Gestor de tareas semanales **********************-->
+        <section class="taskManager">
+            <div class="titlecard">
+                <div class="lineTitle"></div>
+                <h3 class="sub-title">Gestor de tareas semanales</h3>
+                <div class="lineTitle"></div>
+            </div>
+            <div class="containerCards">
+
+                <!-- card1 -->
+                <div class="boxCards">
+                    <div class="contentCard">
+                        <div class="subtitleCard sub-title">
+                            <h3 class="title">To do</h3>
+                        </div>
+                        <div class="textParrafo">
+                            <p class="date">Vie 11/Nov</p>
+                            <p class="paragraph">Entrega ensayo proteccion de recursos forestales.</p>
+                        </div>
+                        <div class="btnCard">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <!-- caja de indicador -->
+                    <div class="boxInd">
+                        <div class="indi">
+                        </div>
+                        <div class="textFooterCard">
+                            <p class="sub-title footerInd">Tareas en "To do"</p>
+                        </div>
+                        <!-- caja de indicador -->
+                    </div>
                 </div>
-                <div><!--Contenedor Barra-->
-                    <div><!--Barra--></div>
-                    <div><!--Forma y mensaje--></div>
+                <!-- end card 1 -->
+                <!-- card2 -->
+                <div class="boxCards">
+                    <div class="contentCard">
+                        <div class="subtitleCard sub-title">
+                            <h3 class="title">In Process</h3>
+                        </div>
+                        <div class="textParrafo">
+                            <p class="date">Mie. 09/Nov</p>
+                            <p class="paragraph">Lectura de articulos para el trabajo de grado.</p>
+                        </div>
+                        <div class="btnCard">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="boxInd">
+                        <div class="indi">
+                        </div>
+                        <div class="textFooterCard">
+                            <p class=" sub-title footerInd">Tareas en "In Process</p>
+                        </div>
+                    </div>
                 </div>
-                <div><!--Contenedor Barra-->
-                    <div><!--Barra--></div>
-                    <div><!--Forma y mensaje--></div>
+                <!-- end card 2 -->
+                <!-- card3 -->
+                <div class="boxCards">
+                    <div class="contentCard">
+                        <div class="subtitleCard sub-title">
+                            <h3 class="title">Done</h3>
+                        </div>
+                        <div class="textParrafo">
+                            <p class="date">Lun. 07/Nov</p>
+                            <p class="paragraph">Presentacion caso grupal daño ambiental.</p>
+                        </div>
+                        <div class="btnCard">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="boxInd">
+                        <div class="indi">
+                        </div>
+                        <div class="textFooterCard">
+                            <p class="sub-title footerInd">Tareas en "Done"</p>
+                        </div>
+                    </div>
                 </div>
-                <div><!--Contenedor Barra-->
-                    <div><!--Barra--></div>
-                    <div><!--Forma y mensaje--></div>
-                </div>
-                <div><!--Contenedor Barra-->
-                    <div><!--Barra--></div>
-                    <div><!--Forma y mensaje--></div>
-                </div>
+                <!-- end card 3 -->
             </div>
         </section>
-        <!--End-Grafica-->
-        <!--Seccion-Actividades-->
+        <!--********************* Gestor de tareas semanales **********************-->
+
+
+        <!--********************* Emociones Mas experimentadas **********************-->
         <section>
+
             <div class="seccion-actividades">
                 <h2 class="title-seccion-actividades title-container-seccion-actividades">Actividades más relacionadas al estado de ánimo</h2>
                 <div class="sub-seccion-actividades">
@@ -1059,23 +1134,158 @@
                         </div>
                     </div>
                     <p></p>
+
+            <div class="graphic"><!--Contenedor Grafica-->
+                <div class="bars"><!--Contenedor Barra-->
+                    <h3 class="sub-title emocion">Emociones Más Experimentadas por estado de ánimo</h3>
+            <hr class="linea"><br>
+                    <div class="progress"><!--Barra "Genial"-->
+                        <div class="barsCon">
+                            <span class="sub-title color-text">Genial</span>
+                            <div id="cari"> 
+                                <div class="smaile"></div>
+                            </div>
+                            <div id="caricool" class="sub-title">Emocionado/a <b>50%</b></div>
+                        </div>
+                        <div><!--Forma y mensaje-->
+                            <div class="form"> 
+                                <div id="form-coll"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="progress"><!--Barra "Bien"-->
+                            <div class="barsCon">
+                                <span class="sub-title color-text">Bien</span>
+                                <div id="carigood">
+                                    <div class="good"></div>
+                                </div>
+                                <div id="Feliz" class="sub-title">Feliz <b>70%</b></div>
+                        </div>
+                            </div>
+                            <div><!--Forma y mensaje-->
+                                <div class="form">
+                                    <div id="form-good"></div>
+                                </div>
+                            </div>
+    
+                            <div class="progress"><!--Barra "Normal"-->
+                                <div class="barsCon">
+                                    <span class="sub-title color-text">Normal</span>
+                                    <div id="carinormal">
+                                        <div class="normal"></div>
+                                    </div>
+                                    <div id="Calmado" class="sub-title">Calmado/a <b>30%</b></div>
+                                </div>
+                                <div><!--Forma y mensaje-->
+                                    <div class="form">
+                                        <div id="form-normal"></div>
+                                    </div>
+                                </div>
+    
+                                <div class="progress"><!--Barra "Mal"-->
+                                    <div class="barsCon">
+                                        <span class="sub-title color-text">Mal</span>
+                                        <div id="cariwrong">
+                                            <div class="wrong"></div>
+                                        </div>
+                                        <div id="Ansioso" class="sub-title">Ansioso/a <b>40%</b></div>
+                                    </div>
+                                    <div><!--Forma y mensaje-->
+                                        <div class="form">
+                                            <div id="form-wrong"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="progress"><!--"Terrible"-->
+                                        <div class="barsCon">
+                                            <span class="sub-title color-text">Terrible</span>
+                                            <div id="cariterri">
+                                                <div class="terrible"></div>
+                                            </div>
+                                            <div id="NA" class="sub-title">N/A <b>09%</b></div>
+                                        </div>
+                                        <div><!--Forma y mensaje-->
+                                            <div class="form">
+                                                <div id="form-terrible"></div>
+                                            </div>
+                                        </div>
+                    </div>
+
+                </div>
+                            </div>
+
+        <!--Seguimiento-estado-de-ánimo-->
+        <section>
+            <div>
+                <h2 class="title-2 title-container">Seguimiento de estado de ánimo mensual</h2>
+                <div class="flex-container"> <!--Contenedor Indicadores-->
+                        <div class="progress-container">
+                            <div class="circle circle1">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">20 <span class="lower"> %</span></h2>
+                                <div class="sub-title-2">GENIAL</div>
+                            </div>
+                            
+                        </div>
+                        <div class="progress-container">
+                            <div class="circle circle2">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">10 <span class="lower"> %</span></h2>
+                                <div class="sub-title-2">BIEN</div>
+                            </div>
+                           
+                        </div>
+                        <div class="progress-container">
+                            <div class="circle">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">60 <span class="lower"> %</span></h2>
+                                <div class="sub-title-2">NORMAL</div>
+                            </div>
+                            
+                        </div>
+                        <div class="progress-container">
+                            <div class="circle circle3">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">10 <span class="lower"> %</span></h2>
+                                <div class="sub-title">MAL</div>
+                            </div>
+                            
+                        </div>
+                        <div class="progress-container">
+                            <div class="circle circle4">
+                                <svg>
+                                    <circle cx="40" cy="40" r="40" />
+                                    <circle cx="40" cy="40" r="40" />
+                                </svg>
+                                <h2 class="percentage sub-title-2">0 <span class="lower"> %</span></h2>
+                                <div class="sub-title-2">TERRIBLE</div>
+                            </div>
+                            
+                        </div>
                 </div>
             </div>
         </section>
-        <!--End-Actividades-->
-        <!--Seccion-Frase-->
-        <section>
-            <div>
-                <div></div><!--Div para el icono/imagen-->
-                <p class="paragraph"><!--Frase--> </p>
-                <div></div><!--autor-->
-            </div>
-        </section>
-        <!--End-Frase-->
-        <footer>
-            <!--Crear los div del footer a consideracion-->
-        </footer>
+        <!--End-Seguimiento-->
+
+
+
+
     </div>
-<!--End Container-->
+            </div>
+    <!--End Container-->
 </body>
+
 </html>
