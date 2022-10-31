@@ -12,7 +12,8 @@
         width: 500px; 
       color: #FFFFFF;
       font-size: 40px;
-margin-inline-start: 200px;
+margin-inline-start: 190px;
+margin-block-start: -97px
 
 }
 .title p{
@@ -24,7 +25,7 @@ margin-inline-start: 200px;
     display: table;
     position: relative;
         left: 400px;
-        font-size: large;
+        font-size: 20px;
         font-family: 'DM Serif Display', serif;
         color: #646161;
 }
@@ -35,13 +36,13 @@ margin-inline-start: 200px;
 }
 .grandes{
     position: relative;
-    left: 120px;
+    left: 172px;
         margin-block-start: -1em;
 }
 .name{
     
     display: block;
-        margin-inline-start: 120px;
+        margin-inline-start: 174px;
         color: #292727;
             margin-block-start: -1em;
 }
@@ -138,3 +139,50 @@ margin-inline-start: 200px;
    position: relative;
    left: 70px;
 }
+.st0 {
+      fill: #009458;
+     
+  }
+
+  .st1 {
+      fill: #AADBC7;
+       
+  }
+
+  .st2 {
+      fill: #FEFEFE;
+       
+  }
+.user{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 152px;
+    margin-block-start: 35px;
+    background-color: #FFFFFF;
+}
+ .st0 {
+     fill: #009458;
+ }
+
+ .st1 {
+     fill: #55B890;
+ }
+
+ .st2 {
+     fill: #AADBC7;
+ }
+
+ .st3 {
+     fill: #333333;
+ }
+.rain{
+    width: 50px;
+    height: 50px;
+    margin-block-start: 50px;
+    position: relative;
+    left: 238px;
+}
+ 
+
+
