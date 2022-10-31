@@ -8,28 +8,173 @@
     font-weight: 400;
 }
 
+.title-2{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color: #003B23;
+    font-size: 2vh;
+}
+.title-container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.title-container:before{
+    content: "";
+    display: block;
+    background: #003B23;
+    height: 5px;
+    width: 13vh;
+    position: relative;
+    align-self: center;
+    margin-right: 4vh;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+.title-container::after{
+    content: "";
+    display: block;
+    background: #003B23;
+    height: 5px;
+    width: 13vh;
+    position: relative;
+    align-self: center;
+    margin-left: 3vh;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+.lower{
+    font-size: 15px;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+.progress-container{
+    position: relative;
+    display: flex;
+    padding: 3vh;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    text-align: center;
+}
+.progress-container .circle{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.progress-container .circle svg{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.progress-container .circle svg circle{
+    width: 100px;
+    height: 100px;
+    fill: none;
+    stroke-width: 6;
+    stroke: #000;
+    transform: translate(5px,5px);
+    -webkit-transform: translate(5px,5px);
+    -moz-transform: translate(5px,5px);
+    -ms-transform: translate(5px,5px);
+    -o-transform: translate(5px,5px);
+    stroke-dasharray: 250 ;
+    stroke-dashoffset: 250;
+    stroke-linecap: round;
+}
+.progress-container .circle svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 60) / 100);
+    stroke: #003B23;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.progress-container .circle1 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle1 svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 20) / 100);
+    stroke: #003B23;
+}
+.progress-container .circle2 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle2 svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 10) / 100);
+    stroke: #003B23;
+}
+.progress-container .circle3 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle3 svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 10) / 100);
+    stroke: #003B23;
+}
+.progress-container .circle4 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle4 svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 0) / 100);
+    stroke: #003B23;
+}
+.progress-container .circle .percentage{
+    position: absolute;
+    top: -2.5vh;
+    left: -0.3vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003B23;
+}
+
+
 .footerInd p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+
 
 .sub-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #003B23;
 }
-
-.text {}
-
+.sub-title-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
 .paragraph {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-style: italic;
 }
-
-
 /* nabar */
-
 
 /* Movil */
 
@@ -422,6 +567,40 @@
         font-size: 18px;
     }
     /*=========== section Gestor de tareas ============*/
+
+}
+@media only screen 
+  and (min-device-width: 1366px)  {
+
+      /*Seguimiento de estado de ánimo*/
+    .title-2{
+        font-family: 'DM Serif Display', serif;
+        font-weight: 700;
+        color: #003B23;
+        font-size: 6vh;
+    }
+    .title-container{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+    .title-container::before{
+        width: 54vh;
+    }
+    .title-container::after{
+        width: 54vh;
+    }
+    .progress-container{
+        padding: 12vh;
+    }
+    .progress-container .circle .percentage{
+        left: 10vh;
+        width: 60%;
+        height: 60%;
+    }
+    .flex-container{
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
 
