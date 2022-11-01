@@ -6,7 +6,46 @@
 .title {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
+    background-color: #009458;
+        height: 98px;
+        width: 500px; 
+      color: #FFFFFF;
+      font-size: 40px;
+margin-inline-start: 190px;
+margin-block-start: -97px
+
 }
+
+.title p{
+    display: block;
+    text-align: center;
+}
+
+.phrase{
+    display: table;
+    position: relative;
+        left: 400px;
+        font-size: 20px;
+        font-family: 'DM Serif Display', serif;
+        color: #646161;
+}
+.contac{
+    position: relative;
+        left: 50px;
+            
+}
+.grandes{
+    position: relative;
+    left: 172px;
+        margin-block-start: -1em;
+}
+.name{
+    
+    display: block;
+        margin-inline-start: 174px;
+        color: #292727;
+            margin-block-start: -1em;
+
 
 .title-2{
     font-family: 'DM Serif Display', serif;
@@ -172,6 +211,7 @@
 .sub-title-2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+
 }
 
 .paragraph {
@@ -179,6 +219,140 @@
     font-weight: 300;
     font-style: italic;
 }
+
+.table {
+    border-spacing: 10px;
+    border:hidden;
+    position: relative;
+        left: 743px;
+        margin-block-start: -114px;
+            color: #009458;   
+            font-size: 15px;
+}
+.table2 {
+    border-spacing: 10px;
+    border: hidden;
+    position: relative;
+    left: 860px;
+    margin-block-start: -102px;
+ color: #292727;
+ font-size: 15px;
+}
+
+.Foot{
+    background-color: #a19e9e;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Contac {
+    background-color: #a19e9e;
+        display: flex;
+    
+}
+.foot2{
+
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+   
+}
+.FOT{
+    display: flex;
+    flex-direction: row-reverse;
+            margin-block-start: 0em;
+
+}
+.foot1{
+    background-color: #a19e9e;
+        width: 1334px;
+            height: 213px;
+            padding-top: 40px;
+       
+}
+.foot1 p{
+    position: relative;
+        right: 51px;
+       
+}
+.foot1 hr{
+    position: relative;
+        right: 50px;    
+            right: 50px;
+            border-width: 1px;
+            margin-block-end: 0.5em;
+            margin-block-start: 0.5em;
+            margin-inline-start: px;
+            margin-inline-end: 11px;
+            overflow: auto;
+            border-style: double;
+}
+.foot2 p{
+    color: #292727;
+    display: flex;
+    margin-block-start: -5px;
+}
+.desarrllo{
+        display: flex;
+        flex-direction: row-reverse;
+        left:-408px ;
+        margin-block-start: -39px;
+}
+.foot1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 30px;
+    line-height: 70px;
+    margin-right: 20px;
+    color: #292727;
+   position: relative;
+   left: 70px;
+}
+.st0 {
+      fill: #009458;
+     
+  }
+
+  .st1 {
+      fill: #AADBC7;
+       
+  }
+
+  .st2 {
+      fill: #FEFEFE;
+       
+  }
+.user{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 152px;
+    margin-block-start: 35px;
+    background-color: #FFFFFF;
+}
+ .st0 {
+     fill: #009458;
+ }
+
+ .st1 {
+     fill: #55B890;
+ }
+
+ .st2 {
+     fill: #AADBC7;
+ }
+
+ .st3 {
+     fill: #333333;
+ }
+.rain{
+    width: 50px;
+    height: 50px;
+    margin-block-start: 50px;
+    position: relative;
+    left: 238px;
+}
+ 
+
 
 
 
@@ -1545,4 +1719,5 @@
         }
     }
 }
+
 
