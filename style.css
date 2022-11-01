@@ -1242,19 +1242,10 @@
         justify-content: space-evenly;
         align-items: center;
     }
-    }
-@media only screen and (min-device-width: 1680px) {
-    .progress-container .circle .percentage{
-        left: 2.1vh;
-        top: -0.4vh;
-    }
-
-
-
-/* nabar */
-/*=========== section Gestor de tareas ============*/
+    
+    /*=========== section Gestor de tareas ============*/
 /*Diagrama de barras */
-    .emocion{
+.emocion{
     font-size: 130%;
     margin-right: 20%;
     margin-left: -30%;
@@ -1545,4 +1536,13 @@
         }
     }
 }
-
+@media only screen and (min-device-width: 1680px){
+    .progress-container .circle svg circle:nth-child(2){
+        stroke-dashoffset: calc(250-(250*60)/100);
+        stroke: #003B23;
+        transition: 5s;
+        -webkit-transition: 3s;
+        -moz-transition: 4s;
+        -ms-transition:5s;
+        -o-transition: 6s;
+    }
