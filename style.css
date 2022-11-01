@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
-
-.container {
+.body {
     overflow-x: hidden;
 }
 
-.title{
+.title {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     background-color: #009458;
@@ -16,6 +15,7 @@ margin-inline-start: 190px;
 margin-block-start: -97px
 
 }
+
 .title p{
     display: block;
     text-align: center;
@@ -45,7 +45,175 @@ margin-block-start: -97px
         margin-inline-start: 174px;
         color: #292727;
             margin-block-start: -1em;
+
+
+.title-2{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color: #003B23;
+    font-size: 2vh;
 }
+.title-container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.title-container:before{
+    content: "";
+    display: block;
+    background: #003B23;
+    height: 5px;
+    width: 13vh;
+    position: relative;
+    align-self: center;
+    margin-right: 4vh;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+.title-container::after{
+    content: "";
+    display: block;
+    background: #003B23;
+    height: 5px;
+    width: 13vh;
+    position: relative;
+    align-self: center;
+    margin-left: 3vh;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+.lower{
+    font-size: 15px;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+.progress-container{
+    position: relative;
+    display: flex;
+    padding: 3vh;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    text-align: center;
+}
+.progress-container .circle{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.progress-container .circle svg{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.progress-container .circle svg circle{
+    width: 100px;
+    height: 100px;
+    fill: none;
+    stroke-width: 6;
+    stroke: #000;
+    transform: translate(5px,5px);
+    -webkit-transform: translate(5px,5px);
+    -moz-transform: translate(5px,5px);
+    -ms-transform: translate(5px,5px);
+    -o-transform: translate(5px,5px);
+    stroke-dasharray: 250 ;
+    stroke-dashoffset: 250;
+    stroke-linecap: round;
+}
+.progress-container .circle svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 60) / 100);
+    stroke: #003B23;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.progress-container .circle1 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle1 svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 20) / 100);
+    stroke: #003B23;
+}
+.progress-container .circle2 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle2 svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 10) / 100);
+    stroke: #003B23;
+}
+.progress-container .circle3 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle3 svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 10) / 100);
+    stroke: #003B23;
+}
+.progress-container .circle4 svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #AADBC7;
+}
+.progress-container .circle4 svg circle:nth-child(2){
+    stroke-dashoffset: calc(250 - (250 * 0) / 100);
+    stroke: #003B23;
+}
+.progress-container .circle .percentage{
+    position: absolute;
+    top: -2.5vh;
+    left: -0.3vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003B23;
+}
+
+
+.footerInd p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+.sub-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #003B23;
+}
+
+
+
+
+.sub-title-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
 .paragraph {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -184,5 +352,1372 @@ margin-block-start: -97px
     left: 238px;
 }
  
+
+
+
+
+
+
+
+
+
+.title-seccion-actividades{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.title-container-seccion-actividades{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    text-align: right;
+    padding: 4% 0 2% 0;
+}
+.title-container-seccion-actividades:before{
+    content: "";
+    display: block;
+    background: #FFFFFF;
+    height: 3px;
+    width: 500px;
+    position: relative;
+    align-self: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.seccion-actividades {
+    background: rgb(0,59,35);
+    background: radial-gradient(circle, rgba(0,59,35,0.9220063025210083) 0%, rgba(0,123,73,1) 50%, rgba(128,179,158,1) 100%);
+}
+.container-cloud{
+    margin: 0 15%;
+    padding: 5% 0;
+    align-content: center;
+}
+.viajes:hover, .alimentacion:hover, .sueño:hover, .trabajo:hover, .familia:hover, .amistades:hover, .espiritualidad:hover, .finanzas:hover, .estudio:hover, .salud:hover, .relaciones:hover, .ejercicio:hover{
+    transition: 1s fill;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+    stroke-width: 2%;
+    stroke: #003B23;
+    stroke-linecap: round;
+    stroke-dashoffset: 500;
+    stroke-dasharray: 500;
+    animation: animacionCloud 4s ease-out forwards;
+}
+@keyframes animacionCloud {
+    to {stroke-dashoffset: 0;}
+}
+.viajes, .familia, .ejercicio {
+    fill: #FFFFFF;
+}
+.trabajo, .finanzas, .alimentacion  {
+    fill: #EAF6F1;
+}
+.estudio, .relaciones {
+    fill:#D4EDE3;
+}
+.espiritualidad, .salud  {
+    fill:#BFE4D5;
+}
+.amistades, .sueño {
+    fill: #AADBC7
+}
+.st{fill:#003B23;
+}
+.container-cloud {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a a b"
+    "c d d"
+    "e e f"
+    "g h h"
+    "i i j"
+    "k l l";
+    gap: 0.5%;
+}
+.sub-container-viajes {
+    grid-area: a;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-amistades {
+    grid-area: b;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-espiritualidad {
+    grid-area: c;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-relaciones {
+    grid-area: d;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-alimentacion {
+    grid-area: e;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-trabajo {
+    grid-area: f;
+    align-self: end;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-estudio {
+    grid-area: g;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-ejercicio {
+    grid-area: h;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-sueño {
+    grid-area: i;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-familia {
+    grid-area: j;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-finanzas {
+    grid-area: k;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-salud {
+    grid-area: l;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.sub-container-viajes:hover, .sub-container-relaciones:hover, .sub-container-sueño:hover, .sub-container-alimentacion:hover, .sub-container-ejercicio:hover, .sub-container-salud:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+.sub-container-amistades:hover, .sub-container-espiritualidad:hover, .sub-container-estudio:hover, .sub-container-trabajo:hover, .sub-container-finanzas:hover, .sub-container-familia:hover {
+    transform: scale(2.6);
+    z-index: 1;
+}
+.svg-viajes, .svg-alimentacion, .svg-sueño, .svg-trabajo, .svg-familia, .svg-amistades, .svg-espiritualidad, .svg-finanzas, .svg-estudio, .svg-salud, .svg-relaciones, .svg-ejercicio {
+    margin: 1%;
+    justify-content: center;
+    align-content: center;
+}
+
+@media only screen and (min-device-width: 768px) {
+
+    .title-seccion-actividades {
+        font-size: 25px;
+    }
+    .title-container-seccion-actividades:before {
+        width: 50%;
+    }
+    .container-cloud {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a b c c d e e f"
+        "g h h i j j k l l";
+        gap: 0.5%;
+    }
+    .sub-container-viajes {
+        grid-area: a;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-amistades {
+        grid-area: b;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-espiritualidad {
+        grid-area: c;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-relaciones {
+        grid-area: d;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-alimentacion {
+        grid-area: e;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-trabajo {
+        grid-area: f;
+        align-self: end;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-estudio {
+        grid-area: g;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-ejercicio {
+        grid-area: h;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-sueño {
+        grid-area: i;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-familia {
+        grid-area: j;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-finanzas {
+        grid-area: k;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .sub-container-salud {
+        grid-area: l;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+    }
+    .viajes:hover, .alimentacion:hover, .sueño:hover, .trabajo:hover, .familia:hover, .amistades:hover, .espiritualidad:hover, .finanzas:hover, .estudio:hover, .salud:hover, .relaciones:hover, .ejercicio:hover{
+        transition: 1s fill;
+        transition-timing-function: ease-out;
+        cursor: pointer;
+        stroke-width: 2%;
+        stroke: #003B23;
+        stroke-linecap: round;
+        stroke-dashoffset: 500;
+        stroke-dasharray: 500;
+        animation: animacionCloud 4s ease-out forwards;
+    }
+    .sub-container-viajes:hover, .sub-container-espiritualidad:hover, .sub-container-alimentacion:hover, .sub-container-ejercicio:hover, .sub-container-familia:hover, .sub-container-salud:hover {
+        transform: scale(1.5);
+    }
+    .sub-container-amistades:hover, .sub-container-relaciones:hover, .sub-container-trabajo:hover, .sub-container-estudio:hover, .sub-container-sueño:hover, .sub-container-finanzas:hover {
+        transform: scale(3);
+    }
+}
+
+/* nabar */
+
+/* Movil */
+.nav-bar {
+    padding: 1rem;
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items {
+    display: none;
+    justify-content: start;
+}
+
+.logo {
+    width: 40px;
+}
+
+.border-rigth {
+    border-right: 1px solid white;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    background: white;
+}
+
+
+/*=========== section Gestor de tareas ============*/
+
+.taskManager {
+    background-color: #AADBC7;
+}
+
+.containerCards {
+    margin-top: 1rem;
+    padding: 0 5% 5% 5%;
+}
+
+.titlecard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.lineTitle {
+    width: 20%;
+    height: 2px;
+    background: black;
+}
+
+.boxCards {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.contentCard {
+    border: 2px solid #003B23;
+    height: 160px;
+    background: white;
+}
+
+.date {
+    padding: 5px 0;
+    margin: 0;
+    text-align: end;
+    color: #AADBC7;
+}
+
+.subtitleCard {
+    padding-left: 10px;
+    background-color: #003B23;
+    color: white;
+}
+
+.subtitleCard h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.textParrafo {
+    font-size: 10px;
+    text-align: justify;
+    border-top: 1px solid #AADBC7;
+    border-bottom: 1px solid #AADBC7;
+    padding: 0 10px;
+    margin: 16px 0;
+}
+
+.btnCard {
+    display: flex;
+    justify-content: center;
+}
+
+.btnCard button {
+    border: 1px solid white;
+    padding: 2px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #AADBC7;
+}
+
+.footerInd p .btnCard button:hover {
+    background-color: rgb(0, 59, 35);
+    transition: 1s ease-in-out;
+}
+
+.btnCard button:hover {
+    background-color: rgb(0, 59, 35);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* indicador */
+
+.boxInd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    position: relative;
+}
+
+.textFooterCard {
+    position: absolute;
+    bottom: 19px;
+}
+
+.footerInd {
+    font-size: 10px;
+}
+
+
+/* animation */
+
+@keyframes indicador {
+    from {
+        transform: rotateZ(5deg);
+    }
+    to {
+        transform: rotateZ(-420deg);
+    }
+}
+
+
+/* animation */
+
+.indi {
+    margin: 0 0.5rem 0 2rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0 5px 0 5px;
+    background: linear-gradient(0deg, #009458 50%, #003823 50%);
+    transform: rotate(60deg);
+    position: relative;
+}
+
+.indi::before {
+    content: '30%';
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #AADBC7 content-box;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 4rem;
+    transform: rotate(-60deg);
+}
+
+.indi::after {
+    content: '';
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: linear-gradient(transparent 50%, #AADBC7 50%);
+    transform: scale(1.1) rotate(-60deg);
+    animation-name: indicador;
+    animation-duration: 3s;
+}
+
+
+/*=========== section Gestor de tareas ============*/
+
+/*=========== Emociones mas expresadas por estado de animo============*/
+/*Diagrama de barras */
+    .emocion{
+        color: #003823;
+        font-size: 110%;
+
+    }
+    .linea{
+        width: 68%;
+        border: 1px solid #003823;
+        margin-left: 33%;
+        display: flex;
+        overflow-x: hidden
+    }
+    .graphic{
+        width: 80%;
+        min-width: 80px;
+        left: 10%;
+        position: relative;
+        display: flex;  
+        justify-content:space-between;
+    }
+    .bars{
+        width: 100%;
+        padding: 15px 15px 25px;
+        border: 1px violet;   
+    }
+    .progress{
+        line-height: 30px;
+        position: relative;
+        margin: 8px 0px 0px 0px;
+    }
+    .barsCon{
+        width: 120%;
+        left: -15%;
+        margin-top: -2%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin-bottom: 0px;
+        position: absolute;
+    }
+    .form{
+        border: solid transparent;
+        border-radius: 0px 20px 20px 0px;
+        left: 20%;
+        
+    }
+    .form div{
+        position: relative;
+        width: 0;
+        height: 12px;
+        background-color: #333333;
+        display: block;  
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .color-text{
+        color: #009458;
+        font-size: 12px;
+    }
+
+
+    .smaile{
+        width: 8px;
+        height: 8px;
+        border-bottom: 1px solid #000;
+        border-radius: 50%;
+    }
+    .good{
+        width: 8px;
+        height: 8px;
+        border-bottom: 1px solid #000;
+        border-radius: 50%;
+    }
+    .normal{
+        width: 5px;
+        height: 2px;
+        padding-top: 3px;
+        border-bottom: 1px solid #000;
+    }
+    .wrong{
+        width: 6px;
+        height: 8px;
+        border-top: 1px solid #000;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    .terrible{
+        width: 7px;
+        height: 6px;
+        border-top: 1px solid #fff;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    /*Animacion*/
+
+    /*primera barrita*/
+    #form-coll{
+        animation: Genial-barra 2s forwards;
+        background-color: #ccc;
+    }
+    @keyframes Genial-barra{
+        100%{
+            width: 50%;
+            border-radius: 0px 20px 20px 0px;
+            
+        }
+    }
+    #cari{
+        animation: carita-one 2s forwards;
+        width: 17px;
+        height: 17px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        margin-top: 2%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-one{
+        100%{
+            background-color: #ccc;
+            left: 55%;
+        }
+    }
+    #caricool{
+        animation: emocionado 2s forwards;
+        margin-right: 0%;
+        background-color: transparent;
+        width: 90%;
+        font-size: 70%;
+    }
+    @keyframes emocionado{
+        100%{
+        color: #333333;
+        width: 39%;
+    }
+    }
+    /*Segunda barrita*/
+    #form-good{
+        animation: Bien-barra 4s forwards;
+        background-color: #999;
+    }
+    @keyframes Bien-barra{
+        100%{
+            width: 70%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #carigood{
+        animation: carita-two 4s forwards;
+        width: 17px;
+        height: 17px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        margin-top: 2%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-two{
+        100%{
+            background-color: #999;
+            left: 71%;
+        }
+    }
+    #Feliz{
+        animation: feliz 4s forwards;
+        background-color: transparent;
+        width: 90%;
+        font-size: 70%;
+    }
+    @keyframes feliz{
+        100%{
+        color: #333333;
+        width: 23%;
+    }
+    }
+    /*tercer barrita*/
+    #form-normal{
+        animation: Normal-barra 6s forwards;
+        background-color: #666;
+    }
+    @keyframes Normal-barra{
+        100%{
+            width: 30%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #carinormal{
+        animation: carita-three 6s forwards;
+        width: 17px;
+        height: 17px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        margin-top: 2%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-three{
+        100%{
+            background-color: #666;
+            left: 39%;
+        }
+    }
+    #Calmado{
+        animation: calmado 6s forwards;
+        background-color: transparent;
+        width: 88%;
+        font-size: 70%;
+    }
+    @keyframes calmado{
+        100%{
+        color: #333333;
+        width: 55%;
+        
+    }
+    }
+    /*tercer barrita*/
+    #form-normal{
+        animation: Normal-barra 6s forwards;
+        background-color: #666;
+    }
+    @keyframes Normal-barra{
+        100%{
+            width: 30%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #carinormal{
+        animation: carita-three 6s forwards;
+        width: 17px;
+        height: 17px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        margin-top: 2%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-three{
+        100%{
+            background-color: #666;
+            left: 39%;
+        }
+    }
+    #Calmado{
+        animation: calmado 6s forwards;
+        background-color: transparent;
+        width: 88%;
+        font-size: 70%;
+    }
+    @keyframes calmado{
+        100%{
+        color: #333333;
+        width: 55%;
+        
+    }
+    }
+    /*cuarta barrita*/
+    #form-wrong{
+        animation: Mal-barra 8s forwards;
+    }
+    @keyframes Mal-barra{
+        100%{
+            width: 40%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #cariwrong{
+        animation: carita-four 8s forwards;
+        width: 17px;
+        height: 17px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        margin-top: 2%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-four{
+        100%{
+            background-color: #333;
+            left: 47%;
+        }
+    }
+    #Ansioso{
+        animation: ansioso 8s forwards;
+        background-color: transparent;
+        width: 88%;
+        font-size: 70%;
+    }
+    @keyframes ansioso{
+        100%{
+        color: #333333;
+        width: 47%;
+    }
+    }
+    /*quinta barrita*/
+    #form-terrible{
+        animation: Terrible-barra 10s forwards;
+        background-color: #000;
+    }
+    @keyframes Terrible-barra{
+        100%{
+            width: 09%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #caricool{
+        background-color: transparent;
+    }
+    #cariterri{
+        animation: carita-five 8s forwards;
+        width: 17px;
+        height: 17px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        margin-top: 2%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-five{
+        100%{
+            background-color: #000;
+            left: 21%;
+        }
+    }
+    #NA{
+        animation: NA 8s forwards;
+        background-color: transparent;
+        width: 93%;
+        font-size: 70%;
+    }
+    @keyframes NA{
+        100%{
+        color: #333333;
+        width: 73%;
+        }
+    }
+
+
+
+
+/* Movil */
+
+
+/********************************* desktop *****************************************/
+
+@media only screen and (min-width: 700px) {
+    /*=========== navbar ============*/
+    .nav-bar {
+        padding: 1rem;
+        background: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .items {
+        display: flex;
+        justify-content: start;
+    }
+    .items ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .items ul li {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-right: 1rem;
+        margin: 0 1rem 0 0;
+        color: white;
+    }
+    .items ul li:hover {
+        background-color: rgb(247, 247, 247);
+        transition: 0.3s ease-in-out;
+        color: #333333;
+    }
+    .logo {
+        width: 50px;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+    }
+    .border-rigth {
+        border-right: 1px solid white;
+    }
+    .line {
+        display: none;
+    }
+    /*=========== navbar ============*/
+    /*=========== section Gestor de tareas ============*/
+    .taskManager {
+        background-color: #AADBC7;
+    }
+    .containerCards {
+        margin-top: 1rem;
+        padding: 0 5% 5% 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .titlecard {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .titlecard h3 {
+        font-size: 28px;
+    }
+    .lineTitle {
+        width: 32%;
+        height: 2px;
+        background: black;
+    }
+    .boxCards {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+    }
+    .contentCard {
+        border: 4px solid #003B23;
+        height: 200px;
+        background: white;
+    }
+    .date {
+        font-size: 18px;
+        padding: 5px 0;
+        margin: 0;
+        text-align: end;
+        color: #AADBC7;
+    }
+    .subtitleCard {
+        padding-left: 10px;
+        background-color: #003B23;
+        color: white;
+        font-size: 22px;
+    }
+    .subtitleCard h3 {
+        margin: 0;
+        padding: 0;
+    }
+    .textParrafo {
+        font-size: 16px;
+        text-align: justify;
+        border-top: 1px solid #AADBC7;
+        border-bottom: 1px solid #AADBC7;
+        padding: 0 10px;
+        height: 126px;
+        margin: 2px 0;
+    }
+    .btnCard {
+        display: flex;
+        justify-content: center;
+    }
+    .btnCard button {
+        border: 1px solid white;
+        padding: 2px;
+        width: 90%;
+        border-radius: 20px;
+        background-color: #AADBC7;
+    }
+    /* indicador */
+    .boxInd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .indi {
+        margin: 3rem 0 2rem 0;
+        width: 100px;
+        height: 100px;
+        background: #003B23;
+        border-radius: 100%;
+    }
+    /* indicador */
+    .boxInd {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .textFooterCard {
+        position: absolute;
+        bottom: 50px;
+    }
+    .indi {
+        margin: 0 0.5rem 0 2rem;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin: 2rem 0 2rem 0;
+        background: linear-gradient(0deg, #009458 50%, #003823 50%);
+        transform: rotate(60deg);
+        position: relative;
+    }
+    .indi::before {
+        content: '30%';
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #AADBC7 content-box;
+        border-radius: 50%;
+        box-sizing: border-box;
+        padding: 1rem;
+        font-size: 2rem;
+        color: #ffffff;
+        text-align: center;
+        line-height: 4rem;
+        transform: rotate(-60deg);
+    }
+    .indi::after {
+        content: '';
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background: linear-gradient(transparent 50%, #AADBC7 50%);
+        transform: scale(1.1) rotate(-60deg);
+    }
+    .footerInd {
+        font-size: 18px;
+    }
+    /*=========== section Gestor de tareas ============*/
+}
+@media only screen and (min-device-width: 1366px)  {
+
+    /*Seguimiento de estado de ánimo*/
+    .title-2{
+        font-family: 'DM Serif Display', serif;
+        font-weight: 700;
+        color: #003B23;
+        font-size: 6vh;
+    }
+    .title-container{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+    .title-container::before{
+        width: 54vh;
+    }
+    .title-container::after{
+        width: 54vh;
+    }
+    .progress-container{
+        padding: 12vh;
+    }
+    .progress-container .circle .percentage{
+        left: 2.8vh;
+        top: -0.4vh;
+        width: 60%;
+        height: 60%;
+    }
+    .flex-container{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    }
+@media only screen and (min-device-width: 1680px) {
+    .progress-container .circle .percentage{
+        left: 2.1vh;
+        top: -0.4vh;
+    }
+
+
+
+/* nabar */
+/*=========== section Gestor de tareas ============*/
+/*Diagrama de barras */
+    .emocion{
+    font-size: 130%;
+    margin-right: 20%;
+    margin-left: -30%;
+    }
+    .linea{
+        width: 70%;
+        margin-left: 28%;
+        margin-top: -3.7%;
+        display: flex;  
+        justify-content:space-between;
+    }
+    .graphic{
+        width: 80%;
+        min-width: 590px;
+        left: 21%;
+    }
+    .bars{
+        width: 100%;
+        padding: 30px 30px 50px;
+        border: 1px violet;   
+    }
+    .progress{
+        line-height: 40px;
+        position: relative;
+        margin: 10px 0px;
+    }
+    .barsCon{
+        width: 120%;
+        left: -8%;
+        margin-bottom: 5px;
+
+    }
+    .form{
+        border: solid transparent;
+        border-radius: 0px 20px 30px 0px;
+    }
+    .form div{
+        height: 20px;
+        
+    }
+    .color-text{
+        font-size: 100%;
+        margin-top: 1%;
+    }
+    .smaile{
+        width: 15px;
+        height: 15px;
+    }
+    .good{
+        width: 10px;
+        height: 10px;
+    }
+    .normal{
+        width: 8px;
+        height: 2px;
+    }
+    .wrong{
+        width: 8px;
+        height: 10px;
+    }
+    .terrible{
+        width: 9px;
+        height: 8px;
+    }
+    /*Animacion*/
+    /*primera barrita*/
+    #form-coll{
+        animation: Genial-barra 2s forwards;
+        background-color: #ccc;
+    }
+    @keyframes Genial-barra{
+        100%{
+            width: 50%;
+            border-radius: 0px 20px 20px 0px;
+            
+        }
+    }
+    #cari{
+        animation: carita-one 2s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-one{
+        100%{
+            background-color: #ccc;
+            left: 49%;
+        }
+    }
+    #caricool{
+        animation: emocionado 2s forwards;
+        margin-right: 32%;
+        background-color: transparent;
+        width: 56%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes emocionado{
+        100%{
+        color: #333333;
+        width: 15%;
+    }
+    }
+    /*Segunda barrita*/
+    #form-good{
+        animation: Bien-barra 4s forwards;
+        background-color: #999;
+    }
+    @keyframes Bien-barra{
+        100%{
+            width: 70%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #carigood{
+        animation: carita-two 4s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-two{
+        100%{
+            background-color: #999;
+            left: 66%;
+        }
+    }
+    #Feliz{
+        animation: feliz 4s forwards;
+        background-color: transparent;
+        width: 100%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes feliz{
+        100%{
+        color: #333333;
+        width: 31%;
+        }
+    }
+    /*tercer barrita*/
+    #form-normal{
+        animation: Normal-barra 6s forwards;
+        background-color: #666;
+    }
+    @keyframes Normal-barra{
+        100%{
+            width: 30%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #carinormal{
+        animation: carita-three 6s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-three{
+        100%{
+            background-color: #666;
+            left: 33%;
+        }
+    }
+    #Calmado{
+        animation: calmado 6s forwards;
+        background-color: transparent;
+        width: 93%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes calmado{
+        100%{
+        color: #333333;
+        width: 64%;
+        }
+    }
+    /*cuarta barrita*/
+    #form-wrong{
+        animation: Mal-barra 8s forwards;
+    }
+    @keyframes Mal-barra{
+        100%{
+            width: 40%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #cariwrong{
+        animation: carita-four 8s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-four{
+        100%{
+            background-color: #333;
+            left: 41%;
+        }
+    }
+    #Ansioso{
+        animation: ansioso 8s forwards;
+        background-color: transparent;
+        width: 93%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes ansioso{
+        100%{
+        color: #333333;
+        width: 56%;
+        }
+    }
+    /*quinta barrita*/
+    #form-terrible{
+        animation: Terrible-barra 10s forwards;
+        background-color: #000;
+    }
+    @keyframes Terrible-barra{
+        100%{
+            width: 09%;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    #caricool{
+        background-color: transparent;
+    }
+    #cariterri{
+        animation: carita-five 8s forwards;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        left: 6%;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+    }
+    @keyframes carita-five{
+        100%{
+            background-color: #000;
+            left: 15%;
+        }
+    }
+    #NA{
+        animation: NA 8s forwards;
+        background-color: transparent;
+        width: 93%;
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    @keyframes NA{
+        100%{
+        color: #333333;
+        width: 82%;
+        }
+    }
+}
 
 
